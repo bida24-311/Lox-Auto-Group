@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #e60000; 
+  --text-light: #f5f5f5;
+  --text-gray: #ccc;
+  --background-dark: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +14,45 @@
 
 body, html {
   height: 100%;
+  background-color: var(--background-dark);
+  color: var(--text-light);
 }
 
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: var(--primary-color);
+}
 
 .hero {
   background: url('https://www.topgear.com/sites/default/files/2021/12/18.%20Koenigsegg%20Jesko.jpeg') no-repeat center center/cover;
@@ -48,7 +92,7 @@ body, html {
 
 .btn {
   text-decoration: none;
-  background-color: #e60000;
+  background-color: var(--primary-color);
   color: white;
   padding: 12px 25px;
   font-size: 1rem;
@@ -60,78 +104,11 @@ body, html {
   background-color: #b30000;
 }
 
-.navbar {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.logo {
-  font-family: 'Georgia', 'Times New Roman', serif;
-  font-size: 2.4rem;
-  font-weight: bold;
-  color: white;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #e60000;
-}
-
 .popular-searches {
-  background-color: #111; 
+  background-color: #111;
   color: #fff;
   padding: 50px 20px;
   text-align: center;
-}
-
-.car-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding: 20px;
-}
-
-.car-card {
-  background-color: #1a1a1a;
-  padding: 20px;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-}
-
-.car-card:hover {
-  transform: translateY(-5px);
-}
-
-.car-card p {
-  margin-top: 10px;
-  font-size: 1.1rem;
-}
-
-.car-card img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  display: block;
-  border-radius: 8px;
 }
 
 .featured-cars {
@@ -145,7 +122,7 @@ body, html {
   font-size: 2.8rem;
   margin-bottom: 40px;
   font-weight: 700;
-  color: #e60000;
+  color: var(--primary-color);
 }
 
 .car-grid {
@@ -179,13 +156,13 @@ body, html {
 
 .car-card h3 {
   font-size: 1.4rem;
-  color: #e60000;
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 
 .car-card p {
   font-size: 1.1rem;
-  color: #ccc;
+  color: var(--text-gray);
   margin-bottom: 12px;
   font-weight: 500;
 }
@@ -204,8 +181,8 @@ body, html {
 }
 
 .about-section {
-  background-color: #000; 
-  color: #f5f5f5; 
+  background-color: var(--background-dark);
+  color: var(--text-light);
   min-height: 100vh;
   padding: 100px 20px 60px;
   text-align: center;
@@ -227,7 +204,7 @@ body, html {
   font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 20px;
-  color: #ccc;
+  color: var(--text-gray);
 }
 
 .about-section .btn {
@@ -253,3 +230,4 @@ body, html {
   color: #777;
   font-size: 0.9rem;
 }
+
