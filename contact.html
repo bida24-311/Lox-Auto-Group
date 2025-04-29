@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - LOX Luxury</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - LOX SUPERCARS</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>...</header>
-  <main>
-    <section class="contact">
+  <header class="navbar">
+    <div class="logo">LOX SUPERCARS</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about-us.html">About Us</a></li>
+        <li><a class="nav-link" href="our-fleet.html">Our Fleet</a></li>
+        <li><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li><a class="nav-link" href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-section">
+    <div class="contact-container">
       <h1>Contact Us</h1>
-      <form action="#" method="post">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required>
+      <p>Have questions or want to book a supercar experience? Get in touch — we’d love to hear from you.</p>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
 
         <button type="submit" class="btn">Send Message</button>
       </form>
-    </section>
+    </div>
   </main>
-  <footer>...</footer>
+
+  <footer class="footer">
+    <p>&copy; 2025 LOX SUPERCARS. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+
