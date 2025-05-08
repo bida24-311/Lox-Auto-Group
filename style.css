@@ -16,18 +16,20 @@ body, html {
   height: 100%;
   background-color: var(--background-dark);
   color: var(--text-light);
+  padding-top: 100px;
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.8); 
+  backdrop-filter: blur(4px);     
 }
 
 .logo {
@@ -419,4 +421,8 @@ nav {
 .car-image-gallery img {
   width: 100%;
   border-radius: 10px;
+}
+
+body {
+  padding-top: 100px; 
 }
