@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - LOX SUPERCARS</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact - LOX SUPERCARS</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">LOX SUPERCARS</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="about-us.html">About Us</a></li>
-        <li><a class="nav-link" href="our-fleet.html">Our Fleet</a></li>
-        <li><a class="nav-link active" href="contact.html">Contact</a></li>
-        <li><a class="nav-link" href="feedback.html">Feedback</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="navbar">
+        <div class="logo">LOX SUPERCARS</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="about-us.html">About Us</a></li>
+                <li><a class="nav-link" href="our-fleet.html">Our Fleet</a></li>
+                <li><a class="nav-link active" href="contact.html">Contact</a></li>
+                <li><a class="nav-link" href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">☀️</button>
+    </header>
 
-  <main class="contact-section">
-    <div class="contact-container">
-      <h1>Contact Us</h1>
-      <p>Have questions or want to book a supercar experience? Get in touch — we’d love to hear from you.</p>
+    <main class="contact-section">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p>Have questions or want to book a supercar experience? Get in touch — we’d love to hear from you.</p>
 
-      <form class="contact-form">
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" required />
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
         </div>
+    </main>
 
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-
-        <div class="form-group">
-          <label for="message">Your Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2025 LOX SUPERCARS. All rights reserved.</p>
-  </footer>
+    <footer class="footer">
+        <p>&copy; 2025 LOX SUPERCARS. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
-
