@@ -20,7 +20,7 @@ body, html {
   height: 100%;
   background-color: var(--background-dark);
   color: var(--text-light);
-  padding-top: 100px;
+  padding-top: 50px;
   margin: 0;
 }
 
@@ -29,7 +29,7 @@ body, html {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 20px 50px;
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,7 +135,7 @@ body, html {
 .featured-cars {
   background-color: var(--background-soft);
   color: white;
-  padding: 60px 20px;
+  padding: 60px 40px;
   text-align: center;
 }
 
@@ -149,9 +149,9 @@ body, html {
 
 .car-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  padding: 0 20px;
+  justify-items: center;
 }
 
 .car-card {
@@ -161,6 +161,8 @@ body, html {
   box-shadow: 0 8px 16px rgba(0,0,0,0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
+  max-width: 350px;
+  width: 100%;
 }
 
 .car-card:hover {
@@ -232,7 +234,7 @@ body, html {
   background-color: var(--background-dark);
   color: var(--text-light);
   min-height: 100vh;
-  padding: 120px 20px 60px;
+  padding: 100px 20px 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,5 +314,4 @@ body, html {
   color: #777;
   font-size: 0.9rem;
 }
-
 
