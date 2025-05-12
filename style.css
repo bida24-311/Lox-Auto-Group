@@ -26,7 +26,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
 
-body, html {
+.body, html {
 
 height: 100%;
 
@@ -852,3 +852,37 @@ padding-top: 100px;
 
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #808080;
+  padding: 10px 40px; 
+  border-bottom: 2px solid #3a2e27; 
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px; 
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 10px 0; 
+}
+
+.nav-link.active::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 100%;
+  background: red;
+  margin-top: 4px;
+}
