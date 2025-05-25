@@ -1,61 +1,154 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
-  <meta charset="UTF-8" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Home - LOX SUPERCARS</title>
-
-  <link rel="stylesheet" href="style.css" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - LOX SUPERCARS</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
- <body>
+<body>
 
-   <header>
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">LOX SUPERCARS</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about-us.html" class="nav-link">About Us</a></li>
+        <li><a href="our-fleet.html" class="nav-link">Our Fleet</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
-     <nav class="navbar">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Luxury Supercars</h1>
+      <p>Discover the pinnacle of Automotive Excellence at LOX SUPERCARS</p>
+      <a href="#" class="btn">Browse Our Fleet</a>
+    </div>
+  </section>
 
-       <div class="logo">LOX SUPERCARS</div>
+  <!-- Featured Supercars Section -->
+  <section class="featured-section">
+    <h2>Featured Supercars</h2>
+    <div class="featured-grid">
 
-       <ul class="nav-links">
+      <!-- Car Cards -->
+      <div class="featured-card">
+        <img src="images/senna.jpg" alt="McLaren Senna">
+        <div>
+          <h3>McLaren Senna</h3>
+          <p>$1,000,000</p>
+        </div>
+      </div>
 
-         <li><a href="index.html" class="nav-link active">Home</a></li>
+      <div class="featured-card">
+        <img src="images/huayra.jpg" alt="Pagani Huayra">
+        <div>
+          <h3>Pagani Huayra</h3>
+          <p>$2,000,000</p>
+        </div>
+      </div>
 
-         <li><a href="about-us.html" class="nav-link">About Us</a></li>
+      <div class="featured-card">
+        <img src="images/divo.jpg" alt="Bugatti Divo">
+        <div>
+          <h3>Bugatti Divo</h3>
+          <p>$5,800,000</p>
+        </div>
+      </div>
 
-         <li><a href="our-fleet.html" class="nav-link">Our Fleet</a></li>
+      <div class="featured-card">
+        <img src="images/p1.jpg" alt="McLaren P1">
+        <div>
+          <h3>McLaren P1</h3>
+          <p>$1,500,000</p>
+        </div>
+      </div>
 
-         <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <div class="featured-card">
+        <img src="images/gt3rs.jpg" alt="Porsche GT3 RS">
+        <div>
+          <h3>Porsche GT3 RS</h3>
+          <p>$250,000</p>
+        </div>
+      </div>
 
-         <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+      <div class="featured-card">
+        <img src="images/chiron.jpg" alt="Bugatti Chiron">
+        <div>
+          <h3>Bugatti Chiron</h3>
+          <p>$3,000,000</p>
+        </div>
+      </div>
 
-       </ul>
+      <div class="featured-card">
+        <img src="images/amg1.jpg" alt="Mercedes AMG One">
+        <div>
+          <h3>Mercedes AMG One</h3>
+          <p>$2,700,000</p>
+        </div>
+      </div>
 
-     </nav>
+      <div class="featured-card">
+        <img src="images/regera.jpg" alt="Koenigsegg Regera">
+        <div>
+          <h3>Koenigsegg Regera</h3>
+          <p>$2,000,000</p>
+        </div>
+      </div>
 
-   </header>
+    </div>
+  </section>
 
-   <section class="hero">
+  <!-- Footer -->
+  <footer>
+    <div>
+      <div>
+        <h3>CONTACT</h3>
+        <p>Email: <a href="mailto:contact@loxsupercars.com">contact@loxsupercars.com</a></p>
+        <p>Phone: <a href="tel:+2673950000">+267 395 0000</a></p>
+        <p>Address: <a href="https://www.bac.ac.bw/" target="_blank">Botswana Accountancy College</a></p>
+      </div>
 
-    <div class="hero-content">
+      <div>
+        <h3>SOCIAL LINKS</h3>
+        <p><a href="https://www.instagram.com/accounts/login/" target="_blank">Instagram</a></p>
+        <p><a href="https://twitter.com/login" target="_blank">Twitter</a></p>
+        <p><a href="https://www.youtube.com/login" target="_blank">YouTube</a></p>
+        <p><a href="https://www.tiktok.com/login" target="_blank">TikTok</a></p>
+      </div>
 
-      <h1>Luxury Supercars</h1>
+      <div>
+        <p>© 2025 LOX SUPERCARS. All rights reserved.</p>
+        <p>A Luxury Experience Built for the Bold</p>
+      </div>
+    </div>
+  </footer>
 
-      <p>Discover the pinnacle of Automomotive Excellence at LOX SUPERCARS</p>
+  <!-- Hamburger Menu Script -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-      <a href="#" class="btn">Browse Our Fleet</a>
-
-    </div>
-
-  </section>
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
 
 </body>
 
 </html>
+
 
 
