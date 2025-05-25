@@ -319,3 +319,16 @@ footer p, footer h3 {
   }
 }
 
+.about-section {
+  padding-top: 100px; /* Space below navbar */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
