@@ -2,60 +2,91 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us - LOX SUPERCARS</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <header class="navbar">
-    <div class="logo">LOX SUPERCARS</div>
-    <nav>
+  <header>
+    <nav class="navbar">
+      <div class="logo">LOX SUPERCARS</div>
       <ul class="nav-links">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="about-us.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="our-fleet.html">Our Fleet</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about-us.html" class="nav-link active">About Us</a></li>
+        <li><a href="our-fleet.html" class="nav-link">Our Fleet</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="feedback.html" class="nav-link">Feedback</a></li>
       </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   </header>
 
   <main class="about-section">
-    <section class="content">
+    <section class="hero-content">
       <h1>About Us</h1>
       <p>
         At <strong>LOX SUPERCARS</strong>, we redefine luxury automotive experiences. Built on a passion for performance
         and precision, we deliver the world's most exclusive supercars to an elite clientele.
       </p>
-
       <p>
         Our curated collection includes legends such as <em>Bugatti</em>, <em>Ferrari</em>, <em>McLaren</em>,
         <em>Pagani</em>, <em>Porsche</em>, and <em>Koenigsegg</em>. Every vehicle is hand-selected for its pedigree,
         rarity, and engineering excellence.
       </p>
-
       <p>
         Beyond the car itself, we craft an unforgettable ownership journey. From private consultations and bespoke
         finance packages to international delivery and VIP aftercare services, LOX SUPERCARS is committed to exceeding
         expectations at every step.
       </p>
-
       <p>
         Indulge your passion. Embrace the extraordinary. Welcome to the ultimate driving experience.
       </p>
-
       <a href="our-fleet.html" class="btn">View Our Fleet</a>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>&copy; 2025 LOX SUPERCARS. All rights reserved.</p>
+  <footer>
+    <div>
+      <div>
+        <h3>CONTACT</h3>
+        <p>Email: <a href="mailto:contact@loxsupercars.com">contact@loxsupercars.com</a></p>
+        <p>Phone: <a href="tel:+2673950000">+267 395 0000</a></p>
+        <p>Address: <a href="https://www.bac.ac.bw/" target="_blank">Botswana Accountancy College</a></p>
+      </div>
+
+      <div>
+        <h3>SOCIAL LINKS</h3>
+        <p><a href="https://www.instagram.com/accounts/login/" target="_blank">Instagram</a></p>
+        <p><a href="https://twitter.com/login" target="_blank">Twitter</a></p>
+        <p><a href="https://www.youtube.com/login" target="_blank">YouTube</a></p>
+        <p><a href="https://www.tiktok.com/login" target="_blank">TikTok</a></p>
+      </div>
+
+      <div>
+        <p>© 2025 LOX SUPERCARS. All rights reserved.</p>
+        <p>A Luxury Experience Built for the Bold</p>
+      </div>
+    </div>
   </footer>
 
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger?.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+
 </body>
+
 </html>
 
 
