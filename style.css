@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #d4af37;
-  --background-dark: #1a1a1a;
-  --text-light: #f0f0f0;
-  --text-gray: #ccc;
-  --featured-bg: #2b2b2b;
+  primary-color: #d4af37;
+  background-dark: #1a1a1a;
+  text-light: #f0f0f0;
+  text-gray: #ccc;
+  featured-bg: #2b2b2b;
 }
 
 * {
@@ -102,7 +102,6 @@ body, html {
   }
 }
 
-/* Hero Section */
 .hero {
   background: url('https://www.topgear.com/sites/default/files/2021/12/18.%20Koenigsegg%20Jesko.jpeg') no-repeat center center/cover;
   height: 100vh;
@@ -152,7 +151,6 @@ body, html {
   background-color: #b30000;
 }
 
-/* Featured Cars Section */
 .featured-section {
   background-color: var(--featured-bg);
   padding: 60px 20px;
@@ -193,7 +191,6 @@ body, html {
   margin-bottom: 15px;
 }
 
-/* Footer */
 footer {
   background-color: #000;
   color: var(--primary-color);
@@ -235,7 +232,6 @@ footer p, footer h3 {
   }
 }
 
-/* Contact Section */
 .contact-section {
   padding: 100px 20px 60px;
   max-width: 800px;
@@ -308,7 +304,6 @@ footer p, footer h3 {
   background-color: #fff;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 600px) {
   .contact-form {
     padding: 20px;
@@ -362,7 +357,6 @@ footer p, footer h3 {
     padding: 20px 40px;
 }
 
-/* Car Card */
 .car-card {
     background-color: #1e1e1e;
     border-radius: 16px;
@@ -378,7 +372,6 @@ footer p, footer h3 {
     transform: translateY(-5px);
 }
 
-/* Car Images */
 .car-image img,
 .car-image-gallery img {
     width: 100%;
@@ -387,7 +380,6 @@ footer p, footer h3 {
     border-radius: 12px;
 }
 
-/* Car Info */
 .car-info {
     padding-top: 12px;
 }
